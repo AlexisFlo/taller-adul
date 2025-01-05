@@ -1,11 +1,71 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/elements/Header.astro';
+import Section from '../components/Section.astro';
+import Footer from '../components/elements/Footer.astro';
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const estereotiposContent = `
+  <div class="grid">
+    <article>
+      <h3>Estilo de Vida</h3>
+      <p>La vida no se vuelve aburrida al envejecer, puede ser plena y satisfactoria.</p>
+    </article>
+    <article>
+      <h3>Adaptabilidad</h3>
+      <p>Las personas mayores poseen experiencia que las hace altamente adaptables.</p>
+    </article>
+    <article>
+      <h3>Contribución</h3>
+      <p>Siguen siendo productivas a través de trabajo, voluntariado y ocio enriquecedor.</p>
+    </article>
+    <article>
+      <h3>Estado de Ánimo</h3>
+      <p>La vejez puede ser una etapa feliz, según estudios científicos.</p>
+    </article>
+    <article>
+      <h3>Relaciones Sociales</h3>
+      <p>El aislamiento no siempre está ligado a la edad, sino a factores externos.</p>
+    </article>
+  </div>
+`;
+
+const edadismoContent = `
+  <ul>
+    <li>Menor esperanza de vida y peor salud.</li>
+    <li>Mayor aislamiento social y soledad.</li>
+    <li>Incremento de la pobreza e inseguridad económica.</li>
+    <li>Mayor riesgo de violencia y abuso.</li>
+  </ul>
+`;
+
+const solucionesContent = `
+  <ol>
+    <li>Fortalecer leyes para proteger los derechos de las personas mayores.</li>
+    <li>Implementar programas educativos para mejorar la empatía.</li>
+    <li>Fomentar la interacción entre generaciones.</li>
+    <li>Transformar el lenguaje utilizado en medios de comunicación.</li>
+  </ol>
+`;
+
+const recursosContent = `
+  <ul>
+    <li><a href="#">Artículos educativos</a></li>
+    <li><a href="#">Infografías</a></li>
+    <li><a href="#">Guías descargables</a></li>
+  </ul>
+`;
+
+const contribuyeContent = `
+  <ul>
+    <li>Participa como voluntario.</li>
+    <li>Haz una donación para apoyar la causa.</li>
+    <li>Comparte en tus redes sociales.</li>
+  </ul>
+`;
 ---
-
-<Layout>
-	<Welcome />
+<Layout title='Sin Mayores Etiquetas'>
+  <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+    <Hero />
+  </main>
 </Layout>
